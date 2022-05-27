@@ -1,0 +1,68 @@
+h1 {
+  color: @h1-color;
+  font-family: @h1-font;
+  font-size: @h1-size-mobile;
+  font-weight: @h1-weight;
+
+  @media @tablet {
+    font-size: @h1-size;
+  }
+}
+
+h2 {
+  color: @h2-color;
+  font-family: @h2-font;
+  font-size: @h2-size-mobile;
+  font-weight: @h2-weight;
+
+  @media @tablet {
+    font-size: @h2-size;
+  }
+}
+
+h3 {
+  color: @h3-color;
+  font-size: @h3-size-mobile;
+  font-weight: @h3-weight;
+
+  @media @tablet {
+    font-size: @h3-size;
+  }
+}
+
+p {
+  color: @p-color;
+  font-size: @p-size-mobile;
+
+  @media @tablet {
+    font-size: @p-size;
+  }
+}
+
+a {
+  color: @link-color;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: @link-hover-color;
+  }
+}
+
+.ingress {
+  color: @ingress-color;
+  display: block;
+  font-size: @ingress-size;
+  font-weight: @ingress-weight;
+  padding: @ingress-margin 0;
+}
+
+.caption {
+  color: @caption-color;
+  font-size: @caption-size;
+}
+
+blockquote {
+  color: @quote-color;
+  font-size: @quote-size;
+}

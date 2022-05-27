@@ -1,0 +1,24 @@
+// Rakenteiden/alueiden tyylit
+
+.layout {
+  padding-top: @layout-padding;
+  padding-bottom: @layout-padding;
+
+  &-dark {
+    .layout-style (@layout-dark-bg, @layout-dark-color);
+  }
+
+  &-large-padding {
+    padding-bottom: @layout-padding-lg;
+    padding-top: @layout-padding-lg;
+  }
+
+  &-center-vertically {
+    .row {
+      @media @tablet {
+        align-items: center;
+        display: flex;
+      }
+    }
+  }
+}

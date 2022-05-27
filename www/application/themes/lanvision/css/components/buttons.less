@@ -1,0 +1,35 @@
+.btn,
+button {
+  .transition(@button-transition);
+}
+
+.btn {
+  border: 0;
+  margin: @btn-cta-margin;
+  max-width: 100%;
+  white-space: normal;
+
+  &-primary {
+    background-color: @btn-cta-primary-bg;
+    color: @btn-cta-primary-color;
+    padding: @btn-cta-padding;
+
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: @btn-cta-primary-bg-hover;
+    }
+  }
+
+  &-secondary {
+    background-color: @btn-cta-secondary-bg;
+    color: @btn-cta-secondary-color;
+    padding: @btn-cta-padding;
+
+    &:hover,
+    &:active,
+    &:focus {
+      color: @btn-cta-secondary-color-hover;
+    }
+  }
+}
