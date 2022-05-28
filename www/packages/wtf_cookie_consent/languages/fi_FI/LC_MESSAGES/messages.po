@@ -1,0 +1,378 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2022-02-25 15:54+0200\n"
+"PO-Revision-Date: 2022-02-25 15:55+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fi_FI\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.0\n"
+"X-Poedit-Basepath: ../../..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: t\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: controller.php:24 controller.php:29
+msgid "WTF Cookie Consent"
+msgstr "WTF Evästesuostumus"
+
+#: controllers/single_page/dashboard/system/basics/cookie_consent.php:84
+msgid "Display settings successfully saved."
+msgstr "Asetukset tallennettu."
+
+#: controllers/single_page/dashboard/system/basics/cookie_consent.php:128
+msgid "Colors successfully saved."
+msgstr "Tyyliasetukset tallennettu."
+
+#: controllers/single_page/dashboard/system/basics/cookie_consent.php:154
+msgid "Scripts successfully saved. Cookie consent will show again for users."
+msgstr "Skriptit tallennettu."
+
+#: single_pages/dashboard/system/basics/cookie_consent.php:10
+msgid "Cookie Consent"
+msgstr "Evästesuostumus"
+
+#: single_pages/dashboard/system/basics/cookie_consent.php:15
+msgid "Content"
+msgstr "Sisältö"
+
+#: single_pages/dashboard/system/basics/cookie_consent.php:16
+msgid "Styles"
+msgstr "Tyylit"
+
+#: single_pages/dashboard/system/basics/cookie_consent.php:17
+msgid "Cookies and scripts"
+msgstr "Evästeet ja skriptit"
+
+#: single_pages/dashboard/system/basics/cookie_consent.php:28
+msgid "Content for different languages"
+msgstr "Sisältö eri kielille"
+
+#: single_pages/dashboard/system/basics/cookie_consent.php:33
+msgid "Enabled"
+msgstr "Käytössä"
+
+#: single_pages/dashboard/system/basics/cookie_consent.php:38
+msgid "Message"
+msgstr "Teksti"
+
+#: single_pages/dashboard/system/basics/cookie_consent.php:44
+msgid "Accept button text"
+msgstr "Hyväksymis painikkeen teksti"
+
+#: single_pages/dashboard/system/basics/cookie_consent.php:48
+msgid "Decline button text"
+msgstr "Hylkäys painikkeen teksti"
+
+#: single_pages/dashboard/system/basics/cookie_consent.php:55
+msgid "Cookies page link"
+msgstr "Evästeet-sivun linkki"
+
+#: single_pages/dashboard/system/basics/cookie_consent.php:59
+msgid "Cookies page link text"
+msgstr "Evästeet-sivun linkin teksti"
+
+#: single_pages/dashboard/system/basics/cookie_consent.php:66
+msgid "Show More Info -button text"
+msgstr "Lisäasetusten painikkeen teksti"
+
+#: single_pages/dashboard/system/basics/cookie_consent.php:67
+msgid "If empty, custom choices won't be shown"
+msgstr "Jos jätetty tyhjäksi, kustomointivaihtoehtoja ei näytetä."
+
+#: single_pages/dashboard/system/basics/cookie_consent.php:71
+msgid "Custom cookies title"
+msgstr "Evästeiden kustomoinnin otsikko"
+
+#: single_pages/dashboard/system/basics/cookie_consent.php:77
+msgid "More Info"
+msgstr "Lisätietojen teksti"
+
+#: single_pages/dashboard/system/basics/cookie_consent.php:81
+#: single_pages/dashboard/system/basics/cookie_consent.php:150
+#: single_pages/dashboard/system/basics/cookie_consent.php:206
+#: src/PackageServiceProvider.php:308
+msgid "Save"
+msgstr "Tallenna"
+
+#: single_pages/dashboard/system/basics/cookie_consent.php:88
+msgid "Style"
+msgstr "Tyyli"
+
+#: single_pages/dashboard/system/basics/cookie_consent.php:91
+msgid "Consent dialog style"
+msgstr "Suostumuslaatikon tyyli"
+
+#: single_pages/dashboard/system/basics/cookie_consent.php:92
+#: single_pages/dashboard/system/basics/cookie_consent.php:102
+msgid "Box"
+msgstr "Laatikko"
+
+#: single_pages/dashboard/system/basics/cookie_consent.php:92
+msgid "Wide box"
+msgstr "Leveä laatikko"
+
+#: single_pages/dashboard/system/basics/cookie_consent.php:92
+#: single_pages/dashboard/system/basics/cookie_consent.php:102
+msgid "Bar"
+msgstr "Täysleveä banneri"
+
+#: single_pages/dashboard/system/basics/cookie_consent.php:95
+msgid "Consent dialog position"
+msgstr "Suostumusboksin sijainti"
+
+#: single_pages/dashboard/system/basics/cookie_consent.php:96
+msgid "Bottom Right"
+msgstr "Alaoikealla"
+
+#: single_pages/dashboard/system/basics/cookie_consent.php:96
+msgid "Bottom Left"
+msgstr "Alavasemmalla"
+
+#: single_pages/dashboard/system/basics/cookie_consent.php:96
+msgid "Bottom Center"
+msgstr "Alhaalla keskellä"
+
+#: single_pages/dashboard/system/basics/cookie_consent.php:97
+msgid "Centered"
+msgstr "Keskitetty"
+
+#: single_pages/dashboard/system/basics/cookie_consent.php:97
+msgid "Top Center"
+msgstr "Yläoikealla"
+
+#: single_pages/dashboard/system/basics/cookie_consent.php:101
+msgid "Consent settings style"
+msgstr "Suostumuksen lisäasetusten tyyli"
+
+#: single_pages/dashboard/system/basics/cookie_consent.php:106
+msgid "Colors"
+msgstr "Värit"
+
+#: single_pages/dashboard/system/basics/cookie_consent.php:109
+msgid "Banner background"
+msgstr "Suostumusboksin taustaväri"
+
+#: single_pages/dashboard/system/basics/cookie_consent.php:113
+msgid "Banner text color"
+msgstr "Suostumusboksin tekstin väri"
+
+#: single_pages/dashboard/system/basics/cookie_consent.php:120
+msgid "Accept Button Background"
+msgstr "Hyväksymis painikkeen taustaväri"
+
+#: single_pages/dashboard/system/basics/cookie_consent.php:124
+msgid "Accept Button Color"
+msgstr "Hyväksymis painikkeen tekstin väri"
+
+#: single_pages/dashboard/system/basics/cookie_consent.php:131
+msgid "Decline Button Background"
+msgstr "Hylkäämis painikkeen taustaväri"
+
+#: single_pages/dashboard/system/basics/cookie_consent.php:135
+msgid "Decline Button Color"
+msgstr "Hylkäämis painikkeen tekstin väri"
+
+#: single_pages/dashboard/system/basics/cookie_consent.php:142
+msgid "Link color"
+msgstr "Linkin väri suostumusboksissa"
+
+#: single_pages/dashboard/system/basics/cookie_consent.php:158
+msgid "Tags"
+msgstr "Tagit"
+
+#: single_pages/dashboard/system/basics/cookie_consent.php:161
+msgid "Google Analytics ID"
+msgstr ""
+
+#: single_pages/dashboard/system/basics/cookie_consent.php:165
+msgid "Google Tag Manager ID"
+msgstr ""
+
+#: single_pages/dashboard/system/basics/cookie_consent.php:169
+msgid "Facebook Pixel ID"
+msgstr ""
+
+#: single_pages/dashboard/system/basics/cookie_consent.php:174
+msgid "Head"
+msgstr ""
+
+#: single_pages/dashboard/system/basics/cookie_consent.php:177
+#: single_pages/dashboard/system/basics/cookie_consent.php:193
+msgid "Necessary (always allowed)"
+msgstr "Välttämättömät (aina sallittuja)"
+
+#: single_pages/dashboard/system/basics/cookie_consent.php:181
+#: single_pages/dashboard/system/basics/cookie_consent.php:197
+msgid "Analytics scripts"
+msgstr "Analytiikka skriptit"
+
+#: single_pages/dashboard/system/basics/cookie_consent.php:185
+#: single_pages/dashboard/system/basics/cookie_consent.php:201
+msgid "Marketing scripts"
+msgstr "Markkinointi/mainosten kohdistamisen skriptit"
+
+#: single_pages/dashboard/system/basics/cookie_consent.php:190
+msgid "Footer"
+msgstr ""
+
+#: src/PackageServiceProvider.php:81
+msgid "2 years"
+msgstr "2 vuotta"
+
+#: src/PackageServiceProvider.php:82
+msgid "Used to store and count pageviews."
+msgstr "Sivukatseluiden laskemiseen ja tallentamiseen."
+
+#: src/PackageServiceProvider.php:88 src/PackageServiceProvider.php:347
+msgid "1 year"
+msgstr "1 vuosi"
+
+#: src/PackageServiceProvider.php:89
+msgid "Used to store information of how visitors use a website."
+msgstr ""
+"Käytetään tallentamaan tietoja siitä, kuinka vierailijat käyttävät "
+"verkkosivustoa."
+
+#: src/PackageServiceProvider.php:94
+msgid "1 min"
+msgstr "1 min"
+
+#: src/PackageServiceProvider.php:95
+msgid "Used to limit the number of requests"
+msgstr "Käytetään rajoittamaan pyyntöjen määrää"
+
+#: src/PackageServiceProvider.php:110 src/PackageServiceProvider.php:117
+msgid "3 months"
+msgstr "3 kk"
+
+#: src/PackageServiceProvider.php:111
+#, fuzzy
+#| msgid "Used to store information of how visitors use a website."
+msgid "Used to store and track visits across websites."
+msgstr ""
+"Käytetään tallentamaan tietoja siitä, kuinka vierailijat käyttävät "
+"verkkosivustoa."
+
+#: src/PackageServiceProvider.php:118
+msgid "Used to provide ad delivery or retargeting."
+msgstr "Käytetään mainosten toimittamiseen tai uudelleenkohdistamiseen."
+
+#: src/PackageServiceProvider.php:145
+msgid "Analytics cookies"
+msgstr "Analytiikkaevästeet"
+
+#: src/PackageServiceProvider.php:146
+msgid ""
+"These cookies collect information about how you use the website, which pages "
+"you visited and which links you clicked on. All of the data is anonymized "
+"and cannot be used to identify you. Collected data is used for developing "
+"this website."
+msgstr ""
+"Nämä evästeet keräävät tietoja siitä, kuinka verkkosivustoa käytetään, millä "
+"sivuilla vieraillaan ja mitä linkkejä on käytetty. Kaikki tiedot ovat "
+"anonymisoituja, eikä niitä voida käyttää tunnistamiseen. Kerättyjä tietoja "
+"käytetään tämän verkkosivuston kehittämiseen."
+
+#: src/PackageServiceProvider.php:157
+msgid "Advertisement and Targeting cookies"
+msgstr "Mainostus- ja kohdistamisevästeet"
+
+#: src/PackageServiceProvider.php:158
+msgid ""
+"These cookies collect information about how you use the website, which pages "
+"you visited and which links you clicked on. All of the data is anonymized "
+"and cannot be used to identify you"
+msgstr ""
+"Nämä evästeet keräävät tietoja siitä, kuinka verkkosivustoa käytetään, millä "
+"sivuilla vieraillaan ja mitä linkkejä on käytetty. Kaikki tiedot ovat "
+"anonymisoituja, eikä niitä voida käyttää tunnistamiseen. Kerättyjä tietoja "
+"käytetään tämän verkkosivuston kehittämiseen."
+
+#: src/PackageServiceProvider.php:173
+msgid "We use cookies, is that okay?"
+msgstr "Käytämme sivustolla evästeitä. Sallitaanko kaikki evästeet?"
+
+#: src/PackageServiceProvider.php:179
+msgid "Okay"
+msgstr "Kyllä"
+
+#: src/PackageServiceProvider.php:182
+msgid "No"
+msgstr "Ei"
+
+#: src/PackageServiceProvider.php:194
+msgid "Customize cookie options here."
+msgstr "Voit muuttaa sivustolle asettamiasi evästeasetuksia tässä."
+
+#: src/PackageServiceProvider.php:197
+msgid "Cookie settings"
+msgstr "Evästeasetukset"
+
+#: src/PackageServiceProvider.php:294
+msgid ""
+"Sorry to bother you again, but there has been some changes to our terms or "
+"cookies!"
+msgstr ""
+"Pahoittelut häiriöstä, mutta evästeisiimme on tullut muutoksia! Hyväksytkö "
+"kaikki evästeet?"
+
+#: src/PackageServiceProvider.php:311
+msgid "Close"
+msgstr "Sulje"
+
+#: src/PackageServiceProvider.php:313
+msgid "Name"
+msgstr "Nimi"
+
+#: src/PackageServiceProvider.php:314
+msgid "Domain"
+msgstr "Toimittaja"
+
+#: src/PackageServiceProvider.php:315
+msgid "Expiration"
+msgstr "Säilytysaika"
+
+#: src/PackageServiceProvider.php:316
+msgid "Description"
+msgstr "Kuvaus"
+
+#: src/PackageServiceProvider.php:323
+msgid "Strictly necessary cookies"
+msgstr "Välttämättömät evästeet"
+
+#: src/PackageServiceProvider.php:324
+msgid ""
+"These cookies are essential for the proper functioning of this website. "
+"Without these cookies, the website would not work properly"
+msgstr ""
+"Nämä evästeet ovat välttämättömiä tämän verkkosivuston asianmukaisen "
+"toiminnan kannalta. Ilman näitä evästeitä verkkosivusto ei välttämättä toimi "
+"oikein. Näihin evästeisiin ei tallenneta käyttäjää yksilöiviä tietoja."
+
+#: src/PackageServiceProvider.php:334 src/PackageServiceProvider.php:341
+msgid "Session"
+msgstr "Istunto"
+
+#: src/PackageServiceProvider.php:335
+msgid "Saving technical info for logged in users"
+msgstr "Teknisten tietojen tallentaminen sisäänkirjautuneelle käyttäjälle"
+
+#: src/PackageServiceProvider.php:342
+msgid "ConcreteCMS cookie for checking if user is logged in"
+msgstr "ConcreteCMS eväste joka tarkistaa käyttäjän sisäänkirjautumistilanteen"
+
+#: src/PackageServiceProvider.php:348
+msgid "Save users cookie consent settings"
+msgstr "Tallentaa käyttäjän evästevalinnat"
+
+#: src/PackageServiceProvider.php:355
+msgid "More information"
+msgstr "Lisätietoja"
+
+#: src/PackageServiceProvider.php:479
+msgid "Open cookie Settings"
+msgstr "Avaa evästeasetukset"
