@@ -29,7 +29,7 @@
 </style>
   <div class="teksticontainer">
     <div id="sormi" class="sormi blink">☞</div>
-    <div id="mainosteksti" class="mainosteksti blink">Kokeile tästä!</div>
+    <div id="mainosteksti" class="mainosteksti blink">Hiiri tähän!</div>
   </div>
   <div class="center">
     <input id="level-one" type="checkbox"/>
