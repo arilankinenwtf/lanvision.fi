@@ -7,7 +7,7 @@
 
     <?php 
     // Google Fontin "optimaalinen" asennus. Vaihda vain linkki tähän alle:
-    $googleFontLink = "https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:wght@400;700&display=swap";
+    $googleFontLink = "https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap";
     ?>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link rel="preload" as="style" href="<?php echo $googleFontLink;?>" />
