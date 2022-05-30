@@ -1,8 +1,8 @@
-name: lanvision
+name: lanvisionoy
 recipe: lamp
 config:
   webroot: www
-  php: "8.0" # Zoner
+  php: "7.4" # Zoner
   database: mariadb:10.3.29 # Zoner
 
 env_file:
