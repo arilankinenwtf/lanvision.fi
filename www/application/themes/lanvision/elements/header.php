@@ -3,6 +3,7 @@ $this->inc('elements/header_top.php');
 ?>
 
 <div class="header">
+
   <div class="header-logo">
     <?php
       $site = Site::getSite();

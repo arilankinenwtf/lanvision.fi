@@ -5,7 +5,7 @@
   padding-bottom: @layout-padding;
 
   &-mobile-hide {
-    @media @small-desktop-hide {
+    @media @small-desktop-max {
       display: none;
     }
   }
@@ -31,4 +31,15 @@
       }
     }
   }
+}
+
+.planet {
+}
+
+#canvas {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    background-color:transparent;
 }
