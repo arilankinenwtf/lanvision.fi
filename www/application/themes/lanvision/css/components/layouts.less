@@ -41,6 +41,12 @@
     width: 100vw;
     height: 100vh;
     position: absolute;
+    display: block;
     top: 0;
+    left: 0vw;
     background-color:transparent;
+    pointer-events: unset;
+    @media @small-desktop-max {
+      pointer-events: none;
+    }
 }

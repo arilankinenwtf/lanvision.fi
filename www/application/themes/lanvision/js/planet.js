@@ -394,11 +394,11 @@
          //Calculate the difference in position for the horizontal and the vertical axis
          let dx = this.mouseDownPosition.x - this.mousePosition.x;
          let dy = this.mouseDownPosition.y - this.mousePosition.y;
- 
+
          //Create a temporary planet object that we can insert in the solar system to perform our calculations
          this.solarSystem.planets.push(new Planet(
              this.mouseDownPosition.x,
-             this.mouseDownPosition.y - $('#canvas').offset().top,
+             this.mouseDownPosition.y,
              Math.sqrt(dx * dx + dy * dy) / 100,
              Math.atan2(dy, dx),
              settings.spawnMass
@@ -534,7 +534,7 @@
          };
          this.mouseDownPosition = {
              x: event.touches[0].clientX,
-             y: event.touches[0].clientY
+             y: event.touches[0].clientY 
          };
      }
  

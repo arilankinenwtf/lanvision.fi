@@ -8,5 +8,6 @@ $this->inc('elements/header.php'); ?>
     // tai $a->setAreaGridMaximumColumns(12);
     $a->display($c);
     ?>
+    
 </main>
 <?php  $this->inc('elements/footer.php'); ?>
