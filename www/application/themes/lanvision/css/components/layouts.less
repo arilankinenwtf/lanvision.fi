@@ -4,6 +4,12 @@
   padding-top: @layout-padding;
   padding-bottom: @layout-padding;
 
+  &-mobile-hide {
+    @media @small-desktop-hide {
+      display: none;
+    }
+  }
+
   &-padding {
     background-color: blue;
   }
