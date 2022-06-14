@@ -398,7 +398,7 @@
          //Create a temporary planet object that we can insert in the solar system to perform our calculations
          this.solarSystem.planets.push(new Planet(
              this.mouseDownPosition.x,
-             this.mouseDownPosition.y,
+             this.mouseDownPosition.y - $('#canvas').offset().top,
              Math.sqrt(dx * dx + dy * dy) / 100,
              Math.atan2(dy, dx),
              settings.spawnMass
