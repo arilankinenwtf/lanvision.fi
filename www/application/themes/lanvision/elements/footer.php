@@ -26,7 +26,6 @@ defined('C5_EXECUTE') or die("Access Denied.");
       </div>
     </div>
   </div>
-  <a href="#" id="back-to-top" title="Back to top">&uarr;</a>
 </div>
 
 <?php $this->inc('elements/footer_bottom.php');?>
