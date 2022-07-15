@@ -12,7 +12,7 @@ defined('C5_EXECUTE') or die("Access Denied.");
         $a->display();
         ?>
       </div>
-      <div class="col-md-4 footer-second py-5">
+      <div class="col-md-4 footer-second">
         <?php
         $a = new GlobalArea('Footer Second');
         $a->display();
