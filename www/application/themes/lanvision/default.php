@@ -11,6 +11,13 @@ $this->inc('elements/header.php'); ?>
         <img src="/application/files/3316/5807/7346/earth.jpg" alt="">
     </div> -->
 
+    <div class="planets">
+        <div class="venus"></div>
+        <div class="earth"></div>
+        <div class="jupiter"></div>
+        <div class="saturnus"></div>
+    </div>
+
     <?php
     $a = new Area('Main');
     $a->enableGridContainer();
