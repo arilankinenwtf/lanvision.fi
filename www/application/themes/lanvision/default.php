@@ -7,6 +7,10 @@ $this->inc('elements/header.php'); ?>
         <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     </div>
 
+    <!-- <div class="earth" >
+        <img src="/application/files/3316/5807/7346/earth.jpg" alt="">
+    </div> -->
+
     <?php
     $a = new Area('Main');
     $a->enableGridContainer();

@@ -1,0 +1,8 @@
+.form-without-labels label,
+.form-without-labels .text-muted {
+}
+
+.form-without-labels .checkbox label,
+.form-without-labels label[for$="[atSelectOptionValue]"] {
+  position: static;
+}

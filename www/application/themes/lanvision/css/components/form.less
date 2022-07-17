@@ -1,0 +1,80 @@
+.ccm-form {
+    background-color: @white;
+    padding: 1rem;
+    padding-bottom: 0;
+    letter-spacing: 1px;
+    label {
+        font-size: 1rem;
+        font-weight: normal;
+        margin-bottom: 0;
+    }
+
+
+
+    input{
+        background-color: @white;
+        font-size: 1rem;
+        letter-spacing: 1px;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        height: 4rem;
+        border: 2px solid rgb(177, 177, 177);
+        border-radius: 1;
+        color: black;
+    }
+    textarea {
+        text-align: left;
+        background-color: @white;
+        font-size: 1rem;
+        letter-spacing: 1px;
+        margin-bottom: 1rem;
+        padding: 1rem;
+        border: 2px solid rgb(177, 177, 177);
+        border-radius: 1;
+    }
+    button {
+        overflow: hidden;
+        white-space: nowrap;
+        margin-top: -70px;
+        margin-left: 100%;
+        transform: translateX(-100%);
+        color: @black;
+        @media @tablet-max {
+            margin-top: 20px;
+            margin-left: auto;
+            transform: translateX(0%);
+        }
+    }
+
+    .text-muted {
+        font-size: 0;
+
+        &:after {
+            color: @mars;
+            content: '*';
+            font-size: @font-size;
+        }
+    }
+  }
+
+  .btn-secondary {
+    background-color: @mars;
+  }
+
+  .captcha {
+    padding-top: 20px;
+    @media @tablet-max {
+       padding-top: 20px;
+    }
+  }
+
+  .form-control:focus {
+      border-color: @mars;
+      outline: 0;
+      -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 2px @mars;
+      box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 2px @mars;
+  }
+
+.mb-3 {
+    margin-bottom: 0 !important;
+}
