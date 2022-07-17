@@ -17,6 +17,11 @@ $this->inc('elements/header.php'); ?>
         <div class="saturnus"></div>
     </div>
 
+    <div class="planet">
+        <canvas id="canvas"></canvas>
+        <div class="venus"></div>
+    </div>
+
     <?php
     $a = new Area('Main');
     $a->enableGridContainer();
