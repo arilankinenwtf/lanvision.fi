@@ -1,31 +1,63 @@
-.venus {
-    background-image: url("/application/files/7316/5808/3562/venus.jpg");
-    width: 0rem;
-    height: 0rem;
-    object-fit: contain;
+.planets {
+    overflow: hidden;
+}
+
+.planets * {
+    background-size: cover;
+    background-repeat: no-repeat;
     z-index: 99;
+    overflow: hidden;
+    margin-top: 10rem;
 }
 
 .earth {
-    background-image: url("/application/files/2416/5808/3562/earth.png");
-    width: 0rem;
-    height: 0rem;
-    object-fit: contain;
-    z-index: 99;
+    background-image: url("/application/files/4016/5808/4772/earth-removebg.png");
+    margin-left: 70vw;
+    width: 20vw;
+    height: 20vw;
 }
 
 .jupiter {
-    background-image: url("/application/files/5916/5808/3562/jupiter.png");
-    width: 0rem;
-    height: 0rem;
-    object-fit: contain;
-    z-index: 99;
+    background-image: url("/application/files/8316/5808/4772/jupiter-removebg.png");
+    margin-left: 20vw;
+    width: 30vw;
+    height: 30vw;
 }
 
 .saturnus {
-    background-image: url("/application/files/7516/5808/3561/saturnus.png");
-    width: 0rem;
-    height: 0rem;
-    object-fit: contain;
+    background-image: url("/application/files/2416/5808/4772/saturnus-removebg.png");
+    margin-left: 50vw;
+    width: 25vw;
+    height: 25vw;
+}
+
+.venus {
+    position: absolute;
+    top: 45vh;
+    left: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
     z-index: 99;
+    overflow: hidden;
+    background-image: url("/application/files/8416/5808/4772/venus-removebg.png");
+    transform: translate(-41%, -4%);
+    width: 84px;
+    height: 84px;
+}
+
+#canvas {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0vw;
+    background-color:transparent;
+    pointer-events: unset;
+    @media @small-desktop-max {
+      pointer-events: none;
+    }
+    @media @tablet-max {
+      display: none;
+    }
 }

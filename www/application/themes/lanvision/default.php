@@ -12,7 +12,6 @@ $this->inc('elements/header.php'); ?>
     </div> -->
 
     <div class="planets">
-        <div class="venus"></div>
         <div class="earth"></div>
         <div class="jupiter"></div>
         <div class="saturnus"></div>
