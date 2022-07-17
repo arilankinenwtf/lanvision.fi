@@ -12,23 +12,49 @@
 
 .earth {
     background-image: url("/application/files/4016/5808/4772/earth-removebg.png");
-    margin-left: 70vw;
+    margin-left: 10vw;
     width: 20vw;
     height: 20vw;
+    
+    pointer-events: none;
+    transform: translateX(-10vw);
+    transform-style: preserve-3d;
+	transition: transform 2s ease;
+    @media @desktop-max {
+
+    }
 }
 
 .jupiter {
     background-image: url("/application/files/8316/5808/4772/jupiter-removebg.png");
-    margin-left: 20vw;
-    width: 30vw;
-    height: 30vw;
+
+    margin-left: 80vw;
+    width: 20vw;
+    height: 20vw;
+    
+    pointer-events: none;
+    transform: translateX(-10vw);
+    transform-style: preserve-3d;
+	transition: transform 2s ease;
+    @media @desktop-max {
+
+    }
 }
 
 .saturnus {
     background-image: url("/application/files/2416/5808/4772/saturnus-removebg.png");
-    margin-left: 50vw;
-    width: 25vw;
-    height: 25vw;
+
+    margin-left: 10vw;
+    width: 20vw;
+    height: 20vw;
+    
+    pointer-events: none;
+    transform: translateX(-10vw);
+    transform-style: preserve-3d;
+	transition: transform 2s ease;
+    @media @desktop-max {
+
+    }
 }
 
 .venus {
@@ -45,19 +71,3 @@
     height: 84px;
 }
 
-#canvas {
-    width: 100vw;
-    height: 100vh;
-    position: absolute;
-    display: block;
-    top: 0;
-    left: 0vw;
-    background-color:transparent;
-    pointer-events: unset;
-    @media @small-desktop-max {
-      pointer-events: none;
-    }
-    @media @tablet-max {
-      display: none;
-    }
-}
