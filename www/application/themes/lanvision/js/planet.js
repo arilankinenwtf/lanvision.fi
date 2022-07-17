@@ -327,13 +327,13 @@
       */
      render(context) {
          //Draw the unlit part of the planet
-         context.fillStyle = 'white';
+         context.fillStyle = 'chocolate';
          context.beginPath();
          context.arc(this.position.getX(), this.position.getY(), this.radius, 0, TWO_PI);
          context.fill();
  
          //Draw the lit part of the planet
-         context.fillStyle = 'white';
+         context.fillStyle = 'chocolate';
          context.beginPath();
          context.arc(this.position.getX() - (this.radialDifference / 2), this.position.getY() - (this.radialDifference / 2), this.sunlitRadius, 0, TWO_PI);
          context.fill();
