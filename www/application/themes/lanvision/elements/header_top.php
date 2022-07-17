@@ -21,7 +21,6 @@
 
     <script src="<?php echo $view->getThemePath()?>/js/main.js"></script>
     <script src="<?php echo $view->getThemePath()?>/js/planet.js" async></script>
-    <script src="<?php echo $view->getThemePath()?>/js/stellarium.js" async></script>
     <script src="<?php echo $view->getThemePath()?>/js/slider.js" async></script>
 
     <link rel="stylesheet" type="text/css" href="<?php echo $this->getThemePath()?>/css/bootstrap.min.css">
@@ -81,6 +80,8 @@
     <meta name="msapplication-TileColor" content="#00aba9">
     <meta name="theme-color" content="#ffffff">
 
+    <script src="<?php echo $view->getThemePath()?>/js/stellarium.js" async></script>
+    
 </head>
 <body>
 <a class="skip-main" href="#main-content">Skip to main content</a>
