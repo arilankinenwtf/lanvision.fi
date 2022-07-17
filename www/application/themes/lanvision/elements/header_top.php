@@ -82,6 +82,16 @@
 
     <script src="<?php echo $view->getThemePath()?>/js/stellarium.js" async></script>
     
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2QBHK0C22C"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-2QBHK0C22C');
+    </script>
+
 </head>
 <body>
 <a class="skip-main" href="#main-content">Skip to main content</a>
