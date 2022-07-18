@@ -835,17 +835,21 @@ window.onscroll = function() {
 
 
 var scrollTop = $(window).scrollTop();
-var pixels = 0;
+var pixelsEarth = 0;
+var pixelsJupiter = 0;
+var pixelsSaturnus = 0;
 var move = 0;
 
 function offsetY() {
     scrollTop = $(window).scrollTop();
 
-    pixels = (scrollTop);
+    pixelsEarth = (scrollTop) / 2;
+    pixelsJupiter = (scrollTop) / 4;
+    pixelsSaturnus = (scrollTop) / 6;
 
-    $('.earth').css({"transform":"translate(" + pixels + "px,0px)"});
-    $('.jupiter').css({"transform":"translate(-" + pixels + "px,0px)"});
-    $('.saturnus').css({"transform":"translate(+" + pixels + "px,0px)"});
+    $('.earth').css({"transform":"translate(+" + pixelsEarth + "px,0px)"});
+    $('.jupiter').css({"transform":"translate(-" + pixelsJupiter + "px,0px)"});
+    $('.saturnus').css({"transform":"translate(+" + pixelsSaturnus + "px,0px)"});
 
     $('.earth').css({"transition": "transform 3s ease"});
     $('.jupiter').css({"transition": "transform 3s ease"});

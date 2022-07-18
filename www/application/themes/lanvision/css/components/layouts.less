@@ -32,36 +32,3 @@
     }
   }
 }
-
-.planet {
-}
-
-#canvas {
-    width: 100vw;
-    height: 100vh;
-    position: absolute;
-    display: block;
-    top: 20vh;
-    left: 0vw;
-    background-color:transparent;
-    pointer-events: unset;
-    @media @small-desktop-max {
-      pointer-events: none;
-    }
-    @media @tablet-max {
-      display: none;
-    }
-}
-
-.stellarium {
-  #particles-js {
-    background-color: @stellarium;
-    position: fixed;
-    top:0;
-    bottom:0;
-    left:0;
-    right:0;
-    overflow:hidden;
-    z-index:-1;
-  }
-}

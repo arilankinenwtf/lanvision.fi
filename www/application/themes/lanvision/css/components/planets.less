@@ -1,25 +1,23 @@
 .planets {
-    overflow: hidden;
 }
 
 .planets * {
     background-size: cover;
     background-repeat: no-repeat;
     z-index: 99;
-    overflow: hidden;
-    margin-top: 10rem;
+
 }
 
 .earth {
     background-image: url("/application/files/4016/5808/4772/earth-removebg.png");
-    margin-left: 10vw;
+    margin-left: 0vw;
     width: 20vw;
     height: 20vw;
     
     pointer-events: none;
     transform: translateX(-10vw);
     transform-style: preserve-3d;
-	transition: transform 2s ease;
+	transition: transform 5s ease;
     @media @desktop-max {
 
     }
@@ -28,14 +26,14 @@
 .jupiter {
     background-image: url("/application/files/8316/5808/4772/jupiter-removebg.png");
 
-    margin-left: 80vw;
+    margin-left: 0vw;
     width: 20vw;
     height: 20vw;
     
     pointer-events: none;
-    transform: translateX(-10vw);
+    transform: translateX(10vw);
     transform-style: preserve-3d;
-	transition: transform 2s ease;
+	transition: transform 5s ease;
     @media @desktop-max {
 
     }
@@ -44,14 +42,14 @@
 .saturnus {
     background-image: url("/application/files/2416/5808/4772/saturnus-removebg.png");
 
-    margin-left: 10vw;
+    margin-left: 0vw;
     width: 20vw;
     height: 20vw;
     
     pointer-events: none;
-    transform: translateX(-10vw);
+    transform: translateX(0vw);
     transform-style: preserve-3d;
-	transition: transform 2s ease;
+	transition: transform 5s ease;
     @media @desktop-max {
 
     }
@@ -59,7 +57,7 @@
 
 .venus {
     position: absolute;
-    top: 65vh;
+    top: 45vh;
     left: 50%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -71,3 +69,36 @@
     height: 84px;
 }
 
+
+.planet {
+}
+
+#canvas {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    display: block;
+    top: 0vh;
+    left: 0vw;
+    background-color:transparent;
+    pointer-events: unset;
+    @media @small-desktop-max {
+      pointer-events: none;
+    }
+    @media @tablet-max {
+      display: none;
+    }
+}
+
+.stellarium {
+  #particles-js {
+    background-color: @stellarium;
+    position: fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    overflow:hidden;
+    z-index:-1;
+  }
+}

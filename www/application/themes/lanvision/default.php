@@ -11,12 +11,6 @@ $this->inc('elements/header.php'); ?>
         <img src="/application/files/3316/5807/7346/earth.jpg" alt="">
     </div> -->
 
-    <div class="planets">
-        <div class="earth"></div>
-        <div class="jupiter"></div>
-        <div class="saturnus"></div>
-    </div>
-
     <div class="planet">
         <canvas id="canvas"></canvas>
         <div class="venus"></div>
