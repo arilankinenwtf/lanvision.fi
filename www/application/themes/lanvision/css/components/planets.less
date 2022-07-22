@@ -1,11 +1,11 @@
 .planets {
+    z-index: -2;
 }
 
 .planets * {
     background-size: cover;
     background-repeat: no-repeat;
-    z-index: 99;
-
+    z-index: -2;
 }
 
 .earth {
@@ -13,13 +13,14 @@
     margin-left: 0vw;
     width: 20vw;
     height: 20vw;
-    
+    z-index: -1;
     pointer-events: none;
     transform: translateX(-10vw);
     transform-style: preserve-3d;
 	transition: transform 5s ease;
     @media @desktop-max {
-
+        width: 40vw;
+        height: 40vw;
     }
 }
 
@@ -35,7 +36,9 @@
     transform-style: preserve-3d;
 	transition: transform 5s ease;
     @media @desktop-max {
-
+        width: 40vw;
+        height: 40vw;
+        margin-left: 50vw;
     }
 }
 
@@ -51,7 +54,8 @@
     transform-style: preserve-3d;
 	transition: transform 5s ease;
     @media @desktop-max {
-
+        width: 40vw;
+        height: 40vw;
     }
 }
 
@@ -65,14 +69,14 @@
     overflow: hidden;
     background-image: url("/application/files/8416/5808/4772/venus-removebg.png");
     transform: translate(-41%, -4%);
-    width: 84px;
-    height: 84px;
+    width: 90px;
+    height: 90px;
     @media @tablet-max {
         z-index: -1;
         top: 26vh;
         width: 59px;
         height: 59px;
-        transform: translate(-50%, 4%);
+        transform: translate(-36%, 4%);
     }
 }
 

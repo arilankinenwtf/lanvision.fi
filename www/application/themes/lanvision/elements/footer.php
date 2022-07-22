@@ -19,6 +19,14 @@ defined('C5_EXECUTE') or die("Access Denied.");
         ?>
       </div>
     </div>
+    <div class="row">
+      <div class="col-md-6 footer-image">
+        <?php
+        $a = new GlobalArea('Footer Image');
+        $a->display();
+        ?>
+      </div>
+    </div>
   </div>
 </div>
 
