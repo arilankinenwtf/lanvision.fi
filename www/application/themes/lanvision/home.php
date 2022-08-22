@@ -1,70 +1,27 @@
 <?php
 defined('C5_EXECUTE') or die("Access Denied.");
 $this->inc('elements/header.php'); ?>
-
-<main class="main-content home-page" id="main-content">
-  <?php
-  if($c->getAttribute('main_image')) {
-    $main_image = $c->getAttribute('main_image');
-    $main_image = $main_image->getURL(); 
-    $mainImgTag = "style=\"background-image: url('" . $main_image . "'; ?>');\"";
-  } else {
-    $main_image = '';
-  }
-  ?>
-  <div class="home-hero header-image" <?php echo $mainImgTag; ?>>
-    <div class="home-hero-title hero-title">
-      <?php
-      $a = new Area('Page Header Title');
-      $a->setAreaGridMaximumColumns(12);
-      $a->display($c);
-      ?>
+<main class="main-content" id="main-content">
+    <div class="stellarium">
+        <div id="particles-js"></div>
+        <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     </div>
-  </div>
 
-  <?php
-  $a = new Area('Main');
-  $a->enableGridContainer();
-  $a->display($c);
-  ?>
+    <!-- <div class="earth" >
+        <img src="/application/files/3316/5807/7346/earth.jpg" alt="">
+    </div> -->
+
+    <div class="planet">
+        <canvas id="canvas"></canvas>
+        <div class="venus"></div>
+    </div>
+
+    <?php
+    $a = new Area('Main');
+    $a->enableGridContainer();
+    // tai $a->setAreaGridMaximumColumns(12);
+    $a->display($c);
+    ?>
+    
 </main>
-
-<?php
-// Hakukoneoptimointiin liittyen structured data määrityksiä
-$site = Site::getSite();
-$siteUrl = BASE_URL;
-
-$siteOrganization = '';
-if($site->getAttribute('site_organization')) { $siteOrganization = $site->getAttribute('site_organization'); }
-
-$siteLogo = '';
-if ($site->getAttribute('site_logo')) { $siteLogo = $site->getAttribute('site_logo')->getURL(); }
-
-$schema = [
-  "@context" => "https://schema.org/",
-  "@graph" => [
-    [
-      "@type" => "WebSite",
-      "@id" => $siteUrl . "/#website",
-      "name" => Config::get('concrete.site'),
-      "url" => $siteUrl
-    ],
-    [
-      "@type" => "Organization",
-      "@id" => $siteUrl . "/#organization",
-      "name" => $siteOrganization,
-      "url" => $siteUrl,
-      "logo" => [
-        "@type" => "ImageObject",
-        "url" => $siteLogo,
-      ]
-    ]
-  ]
-]
-?>
-
-<script type="application/ld+json">
-  <?php echo json_encode($schema); ?>
-</script>
-
 <?php  $this->inc('elements/footer.php'); ?>
