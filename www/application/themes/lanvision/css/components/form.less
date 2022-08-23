@@ -9,7 +9,16 @@
         margin-bottom: 0;
     }
 
-
+    input[type="file"] {
+        cursor: pointer;
+        color: white;
+        text-align: center;
+        height: 50px;
+        border: 0px;
+        background-color: #4b636f;
+        width: 100%;
+        padding-top: 0.6rem;
+    }
 
     input{
         background-color: @white;
@@ -20,7 +29,6 @@
         height: 4rem;
         border: 2px solid rgb(177, 177, 177);
         border-radius: 1;
-        color: black;
     }
     textarea {
         text-align: left;
@@ -39,7 +47,7 @@
         margin-left: 100%;
         transform: translateX(-100%);
         color: @black;
-        @media @tablet-max {
+        @media @tablet {
             margin-top: 20px;
             margin-left: auto;
             transform: translateX(0%);
@@ -63,7 +71,7 @@
 
   .captcha {
     padding-top: 20px;
-    @media @tablet-max {
+    @media @tablet {
        padding-top: 20px;
     }
   }
