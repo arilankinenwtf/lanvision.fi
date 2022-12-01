@@ -12,21 +12,21 @@ defined('C5_EXECUTE') or die("Access Denied.");
         $a->display();
         ?>
       </div>
-      <div class="col-md-6 footer-third">
+      <div class="col-md-6 footer-second">
         <?php
-        $a = new GlobalArea('Footer Third');
+        $a = new GlobalArea('Footer Second');
         $a->display();
         ?>
       </div>
     </div>
-    <div class="row">
+    <!-- <div class="row">
       <div class="col-md-6 footer-image">
         <?php
         $a = new GlobalArea('Footer Image');
         $a->display();
         ?>
       </div>
-    </div>
+    </div> -->
   </div>
 </div>
 
