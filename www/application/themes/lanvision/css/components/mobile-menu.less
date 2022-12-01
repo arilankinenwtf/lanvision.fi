@@ -1,10 +1,10 @@
 .menu-toggle {
-  display: none;
-  padding: @mobile-menu-toggle-padding;
+  display: block;
   position: absolute;
+  padding-right: 30px;
+  padding-top: 1.5rem;
   right: 0;
-
-  @media @tablet {
+  @media @desktop {
     display: none;
   }
 
@@ -23,7 +23,7 @@
     }
 
     &.open {
-      padding-top: 1rem;
+      padding-top: 10px;
 
       .menu-icon {
 
@@ -48,6 +48,9 @@
 }
 
 .mobile-wrapper {
+  p {
+    font-size: 1.5rem;
+  }
   bottom: 0;
   left: 0;
   position: absolute;
@@ -55,23 +58,23 @@
   top: 0;
   height: 0;
 
-  @media @tablet {
+  @media @desktop {
     position: static;
   }
 
 
   &.open {
     height: 100vh;
-    overflow: scroll;
-    z-index: 999;
+    overflow: hidden !important;
+    z-index: 900;
     .hide-scrollbar();
 
-    @media @tablet {
+    @media @desktop {
       position: absolute;
     }
     
     .menu-toggle {
-      @media @tablet {
+      @media @desktop {
         display: block;
       }
     }
@@ -79,48 +82,64 @@
 }
 
 .mobile-menu {
-  background-color: @mobile-menu-bg;
+  a.btn.btn-primary {
+    padding-right: 30px;
+    padding-left: 30px;
+    :hover,
+    :active,
+    :focus {
+      padding-right: 30px;
+      padding-left: 30px;
+    }
+  }
+  background-image: @mobile-menu-bg;
   color: @mobile-menu-color;
   display: none;
   font-family: @mobile-menu-font;
   font-size: @mobile-menu-font-size;
   height: 100vh;
-  margin-top: @header-mobile-height - 2rem;
-  overflow: scroll;
-  padding: @mobile-menu-padding;
+  overflow-y: scroll;
+  overflow-x: hidden;
   .hide-scrollbar();
 
-  @media @tablet {
+  @media @desktop {
     left: auto;
-    min-width: @mobile-menu-width;
-    max-width: @mobile-menu-width;
+  }
+
+  .show-submenu {
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
   .nav {
-    padding: @mobile-menu-padding;
-
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    padding-top: 120px;
+    justify-content: center;
+    text-align: center;
     li {
-      margin-right: @gutter;
-      min-height: @mobile-menu-li-height;
-      position: relative;
-
+      padding-right: 15px;
+      padding-left: 15px;
+      text-align: center;
       a {
-        font-weight: @font-weight-bold;
+        padding-top: 0.5rem;
+        text-align: center;
+        font-size: 30px;
+        font-weight: 800;
       }
 
       ul {
-        display: none;
-        list-style: none;
-        padding-bottom: @gutter-md;
-        padding-inline-start: @gutter;
-
+        padding-left: 15px;
+        padding-right: 15px;
         li {
-          border-bottom: 1px solid @white;
-          padding: @gutter-sm 0;
-
+          text-align: center;
           a {
-            font-weight: @font-weight;
-            font-size: @font-size-sm;
+            text-align: center;
+            padding-top: 0rem;
+            font-weight: 700;
+            font-size: 20px;
+            z-index: 999;
           }
         }
       }
@@ -129,13 +148,12 @@
 
   a {
     color: @mobile-menu-color;
-    display: inline-block;
-    overflow-wrap: break-word;
     padding-left: 0;
     text-decoration: none;
 
     &.nav-path-selected {
-      color: @mobile-menu-active-color;
+      color: @mars;
+      font-weight: 700px;
     }
 
     &.nav-path-selected,

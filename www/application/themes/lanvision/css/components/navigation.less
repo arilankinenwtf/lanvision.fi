@@ -4,26 +4,40 @@ ul.nav {
   display: flex;
   flex-flow: row wrap;
   padding-inline-start: 0;
-
+  margin-right: 20px;
   li {
     align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    .transition();
-
+    padding-right: 70px;
+    @media @large-desktop-max {
+      padding-right: 30px;
+    }
+    a {
+      color: @nav-color;
+      background-color: transparent;
+      font-size: 1.4rem;
+      &:hover,
+      &:focus,
+      &:active {
+        color: @mars;
+      }
+    }
+    
     &:hover,
     &:focus,
     &:active {
-      background-color: @nav-link-hover-bg;
-
       > ul {
         display: block;
       }
     }
 
     &.nav-path-selected {
-      background-color: @nav-link-hover-bg;
+      background-color: transparent;
+      a {
+        color: @mars;
+      }
     }
   }
 }
