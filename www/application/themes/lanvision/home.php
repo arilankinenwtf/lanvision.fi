@@ -11,16 +11,24 @@ $this->inc('elements/header.php'); ?>
         <img src="/application/files/3316/5807/7346/earth.jpg" alt="">
     </div> -->
 
-    <div class="planet">
+    <!-- <div class="planet">
         <canvas id="canvas"></canvas>
         <div class="venus"></div>
-    </div>
+    </div> -->
+
+    <!-- <div class="planets">
+        <div class="earth"></div>
+    </div> -->
 
     <?php
+
     $a = new Area('Main');
     $a->enableGridContainer();
     // tai $a->setAreaGridMaximumColumns(12);
     $a->display($c);
+
+
+    include "planeetat.html";
     ?>
     
 </main>

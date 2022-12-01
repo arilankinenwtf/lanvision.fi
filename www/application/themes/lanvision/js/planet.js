@@ -847,11 +847,11 @@ function offsetY() {
     pixelsJupiter = (scrollTop) / 4;
     pixelsSaturnus = (scrollTop) / 6;
 
-    $('.earth').css({"transform":"translate(+" + pixelsEarth + "px,0px)"});
+    $('.card--earth').css({"transform":"translate(+" + pixelsEarth + "px,0px)"});
     $('.jupiter').css({"transform":"translate(-" + pixelsJupiter + "px,0px)"});
     $('.saturnus').css({"transform":"translate(+" + pixelsSaturnus + "px,0px)"});
 
-    $('.earth').css({"transition": "transform 3s ease"});
+    $('.card--earth').css({"transition": "transform 3s ease"});
     $('.jupiter').css({"transition": "transform 3s ease"});
     $('.saturnus').css({"transition": "transform 3s ease"});
 
