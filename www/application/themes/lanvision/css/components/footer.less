@@ -1,21 +1,25 @@
 .footer {
   position: relative;
+  padding: 4rem;
+  @media @tablet-max {
+    padding: 2rem;
+  }
 
   .footer-first {
-    z-index: 10;
+    padding-bottom: 2rem;
+    img {
+      width: 200px;
+      height: auto;
+    }
     @media @tablet-max {
-      img {
-        width: 200px;
-        height: auto;
-      }
+      text-align: center;
     }
   }
 
-  .footer-third {
-    z-index: 10;
-    text-align: right;
+  .footer-second {
     @media @tablet-max {
-      text-align: center;
+      display: flex;
+      justify-content: center;
     }
   }
 

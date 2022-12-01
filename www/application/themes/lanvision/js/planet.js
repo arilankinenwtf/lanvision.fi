@@ -843,13 +843,13 @@ var move = 0;
 function offsetY() {
     scrollTop = $(window).scrollTop();
 
-    pixelsEarth = (scrollTop) / 2;
+    pixelsEarth = (scrollTop) / 5;
     pixelsJupiter = (scrollTop) / 4;
     pixelsSaturnus = (scrollTop) / 6;
 
     $('.card--earth').css({"transform":"translate(+" + pixelsEarth + "px,0px)"});
     $('.card--jupiter').css({"transform":"translate(-" + pixelsJupiter + "px,0px)"});
-    $('.card--sun').css({"transform":"translate(+" + pixelsSaturnus + "px,0px)"});
+    $('.card--sun').css({"transform":"translate(+" + 0 + "px,0px)"});
     $('.card--mercury').css({"transform":"translate(+" + pixelsSaturnus + "px,0px)"});
 
     $('.card--earth').css({"transition": "transform 3s ease"});

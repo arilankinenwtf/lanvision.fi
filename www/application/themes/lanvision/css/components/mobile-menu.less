@@ -92,17 +92,18 @@
       padding-left: 30px;
     }
   }
-  background-image: @mobile-menu-bg;
+  background-color: @stellarium;
   color: @mobile-menu-color;
   display: none;
   font-family: @mobile-menu-font;
   font-size: @mobile-menu-font-size;
   height: 100vh;
-  overflow-y: scroll;
+  padding-top: 5rem;
+  overflow-y: hidden;
   overflow-x: hidden;
   .hide-scrollbar();
 
-  @media @desktop {
+  @media @desktop-max {
     left: auto;
   }
 
@@ -160,9 +161,7 @@
     &:hover,
     &:focus,
     &:active {
-      color: @mobile-menu-active-color;
-      background-color: @mobile-menu-bg;
-      opacity: @mobile-menu-hover-opacity;
+      color: @mars;
     }
   }
 
