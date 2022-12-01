@@ -848,12 +848,14 @@ function offsetY() {
     pixelsSaturnus = (scrollTop) / 6;
 
     $('.card--earth').css({"transform":"translate(+" + pixelsEarth + "px,0px)"});
-    $('.jupiter').css({"transform":"translate(-" + pixelsJupiter + "px,0px)"});
-    $('.saturnus').css({"transform":"translate(+" + pixelsSaturnus + "px,0px)"});
+    $('.card--jupiter').css({"transform":"translate(-" + pixelsJupiter + "px,0px)"});
+    $('.card--sun').css({"transform":"translate(+" + pixelsSaturnus + "px,0px)"});
+    $('.card--mercury').css({"transform":"translate(+" + pixelsSaturnus + "px,0px)"});
 
     $('.card--earth').css({"transition": "transform 3s ease"});
-    $('.jupiter').css({"transition": "transform 3s ease"});
-    $('.saturnus').css({"transition": "transform 3s ease"});
+    $('.card--sun').css({"transition": "transform 3s ease"});
+    $('.card--jupiter').css({"transition": "transform 3s ease"});
+    $('.card--mercury').css({"transition": "transform 3s ease"});
 
 }
  

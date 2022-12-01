@@ -27,8 +27,8 @@ $this->inc('elements/header.php'); ?>
     // tai $a->setAreaGridMaximumColumns(12);
     $a->display($c);
 
+    // include "planeetat.html";
 
-    include "planeetat.html";
     ?>
     
 </main>
