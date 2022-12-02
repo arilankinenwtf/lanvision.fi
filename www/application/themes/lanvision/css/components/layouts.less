@@ -5,7 +5,13 @@
   padding-bottom: @layout-padding;
 
   &-mobile-hide {
-    @media @small-desktop-max {
+    @media @desktop-max {
+      display: none;
+    }
+  }
+
+  &-desktop-hide {
+    @media @desktop {
       display: none;
     }
   }
