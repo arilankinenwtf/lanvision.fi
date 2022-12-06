@@ -843,9 +843,9 @@ var move = 0;
 function offsetY() {
     scrollTop = $(window).scrollTop();
 
-    pixelsEarth = (scrollTop) / 5;
-    pixelsJupiter = (scrollTop) / 4;
-    pixelsSaturnus = (scrollTop) / 6;
+    pixelsEarth = (scrollTop) / 6;
+    pixelsJupiter = (scrollTop) / 7;
+    pixelsSaturnus = (scrollTop) / 8;
 
     $('.card--earth').css({"transform":"translate(+" + pixelsEarth + "px,0px)"});
     $('.card--jupiter').css({"transform":"translate(-" + pixelsJupiter + "px,0px)"});

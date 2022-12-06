@@ -7,12 +7,9 @@ class PageTheme extends \Concrete\Core\Page\Theme\Theme implements ThemeProvider
 	public function registerAssets() {
         // Täällä määritellään teemassa tarvittavia Concreteen sisältyviä kirjastoja (Esim. jquery)
 
-        $this->providesAsset('css', 'bootstrap/collapse');
-        $this->requireAsset('javascript', 'bootstrap/collapse');
-        $this->requireAsset('javascript', 'bootstrap/transition');
+        $this->providesAsset('css', 'bootstrap');
         //$this->requireAsset('css', 'font-awesome');
         $this->requireAsset('javascript', 'jquery');
-        $this->requireAsset('javascript', 'picturefill');
 	}
 
     protected $pThemeGridFrameworkHandle = 'bootstrap3';

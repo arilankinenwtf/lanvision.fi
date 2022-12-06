@@ -1,6 +1,6 @@
 :root {
     --mercury-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/332937/mercury2.jpg);
-    --mercury-tilt: rotate(0.034deg);
+    --mercury-tilt: rotate(-5.034deg);
     --mercury-day: 407.6;
     --mercury-color: #999999;
     --venus-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/332937/venus2.jpg);
@@ -8,8 +8,8 @@
     --venus-day: 432.5;
     --venus-color: #e8cda2;
     --earth-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/332937/earth.jpg);
-    --earth-tilt: rotate(13.26deg);
-    --earth-day: 300;
+    --earth-tilt: rotate(9.26deg);
+    --earth-day: 400;
     --earth-color: #b3caff;
     --mars-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/332937/mars.jpg);
     --mars-tilt: rotate(25.2deg);
@@ -17,7 +17,7 @@
     --mars-color: #c07158;
     --jupiter-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/332937/jupiter.jpg);
     --jupiter-tilt: rotate(-10.1deg);
-    --jupiter-day: 119.9;
+    --jupiter-day: 219.9;
     --jupiter-color: #c9b5a4;
     --saturn-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/332937/saturn.jpg);
     --saturn-tilt: rotate(26.7deg);
@@ -56,6 +56,7 @@
     margin-top: 5rem;
   }
   .card--mercury .planet__atmosphere {
+    margin-left: -400px;
     box-shadow: inset 10px 0px 12px -2px rgba(255, 255, 255, 0.2), inset -70px 0px 50px 0px black, -5px 0px 10px -4px var(--mercury-color);
   }
   .card--mercury .planet__surface {
