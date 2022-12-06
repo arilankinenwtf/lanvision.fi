@@ -5,10 +5,7 @@ use Concrete\Core\Area\Layout\Preset\Provider\ThemeProviderInterface;
 class PageTheme extends \Concrete\Core\Page\Theme\Theme implements ThemeProviderInterface {
 
 	public function registerAssets() {
-        // Täällä määritellään teemassa tarvittavia Concreteen sisältyviä kirjastoja (Esim. jquery)
-
-        $this->providesAsset('css', 'bootstrap');
-        //$this->requireAsset('css', 'font-awesome');
+        $this->requireAsset('javascript', 'bootstrap');
         $this->requireAsset('javascript', 'jquery');
 	}
 

@@ -19,6 +19,8 @@
     
     <?php Loader::element('header_required');?>
 
+    <link rel="stylesheet" type="text/css" href="<?php echo $this->getThemePath()?>/css/bootstrap.min.css">
+
     <script src="<?php echo $view->getThemePath()?>/js/main.js"></script>
     <script src="<?php echo $view->getThemePath()?>/js/planet.js" async></script>
     <script src="<?php echo $view->getThemePath()?>/js/slider.js" async></script>
@@ -26,7 +28,6 @@
 
     <link rel="stylesheet" type="text/css" href="<?php echo $this->getThemePath()?>/css/components/planeetat.css">
     
-    <link rel="stylesheet" type="text/css" href="<?php echo $this->getThemePath()?>/css/bootstrap.min.css">
     <noscript><link rel="stylesheet" href="styles.css"></noscript>
     <?php echo $html->css($view->getStylesheet('main.less'))?>
     
