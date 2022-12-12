@@ -15,28 +15,33 @@ ul.nav {
     a {
       color: @nav-color;
       background-color: transparent;
-      font-size: 1.4rem;
+      font-size: 18px;
       text-decoration: none;
+      display: inline-block;
+      margin: 0;
       &:hover,
       &:focus,
       &:active {
-        color: @mars;
+        color: @white;
       }
     }
-    
-    &:hover,
-    &:focus,
-    &:active {
-      > ul {
-        display: block;
-      }
+    a:after {
+      display:block;
+      content: '';
+      border-bottom: solid 3px @yellow;  
+      transform: scaleX(0);  
+      transition: transform 250ms ease-in-out;
     }
+    a:hover:after { transform: scaleX(1); }
+    a.fromRight:after{ transform-origin:100% 50%; }
+    a.fromLeft:after{  transform-origin:  0% 50%; }
 
     &.nav-path-selected {
       background-color: transparent;
       a {
         color: @mars;
       }
+      a:after { transform: scaleX(1); }
     }
   }
 }
