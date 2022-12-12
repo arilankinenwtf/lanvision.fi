@@ -5,7 +5,7 @@ $tp = new TaskPermission();
 
 $getString = Core::make('helper/validation/identifier')->getString(18);
 $tabs = [
-    ['slides-' . $getString, t('Items'), true],
+    ['slides-' . $getString, t('Kohteet'), true],
 ];
 echo Core::make('helper/concrete/ui')->tabs($tabs);
 ?>
@@ -246,7 +246,7 @@ echo Core::make('helper/concrete/ui')->tabs($tabs);
     <div class="ccm-image-slider-block-container">
         <div class="ccm-image-slider-entries ccm-image-slider-entries-<?php echo $bID; ?>"></div>
         <div>
-            <button type="button" class="btn btn-success ccm-add-image-slider-entry ccm-add-image-slider-entry-<?php echo $bID; ?>"><?php echo t('Add item'); ?></button>
+            <button type="button" class="btn btn-success ccm-add-image-slider-entry ccm-add-image-slider-entry-<?php echo $bID; ?>"><?php echo t('Lisää kohde'); ?></button>
         </div>
     </div>
 </div>
@@ -254,7 +254,7 @@ echo Core::make('helper/concrete/ui')->tabs($tabs);
 <script type="text/template" id="imageTemplate-<?php echo $bID; ?>">
     <div class="ccm-image-slider-entry ccm-image-slider-entry-<?php echo $bID; ?> slide-well slide-closed">
         <div class="form-group">
-            <label class="control-label"><?php echo t('Image'); ?></label>
+            <label class="control-label"><?php echo t('Kuva'); ?></label>
             <div class="ccm-pick-slide-image ccm-pick-slide-image-<?php echo $bID; ?>">
                 <% if (image_url.length > 0) { %>
                     <img src="<%= image_url %>" />
@@ -265,16 +265,16 @@ echo Core::make('helper/concrete/ui')->tabs($tabs);
             <input type="hidden" name="<?php echo $view->field('fID'); ?>[]" class="image-fID" value="<%=fID%>" />
         </div>
         <div class="form-group" >
-            <label class="control-label"><?php echo t('Title'); ?></label>
+            <label class="control-label"><?php echo t('Otsikko'); ?></label>
             <input class="form-control ccm-input-text" type="text" name="<?php echo $view->field('titleText'); ?>[]" value="<%=titleText%>" />
         </div>
         <div class="form-group" >
-            <label class="control-label"><?php echo t('Content'); ?></label>
+            <label class="control-label"><?php echo t('Teksti'); ?></label>
             <div class="editor-edit-content"></div>
             <textarea id="ccm-slide-editor-<%= _.uniqueId() %>" style="display: none" class="editor-content editor-content-<?php echo $bID; ?>" name="<?php echo $view->field('descriptionText'); ?>[]"><%=descriptionText%></textarea>
         </div>
 
-        <button type="button" class="btn btn-sm btn-default ccm-edit-slide ccm-edit-slide-<?php echo $bID; ?>" data-slide-close-text="<?php echo t('Collapse entry'); ?>" data-slide-edit-text="<?php echo t('Edit item'); ?>"><?php echo t('Edit item'); ?></button>
+        <button type="button" class="btn btn-sm btn-default ccm-edit-slide ccm-edit-slide-<?php echo $bID; ?>" data-slide-close-text="<?php echo t('Pienennä'); ?>" data-slide-edit-text="<?php echo t('Muokkaa kohdetta'); ?>"><?php echo t('Muokkaa kohdetta'); ?></button>
         <button type="button" class="btn btn-sm btn-danger ccm-delete-image-slider-entry ccm-delete-image-slider-entry-<?php echo $bID; ?>"><?php echo t('Remove'); ?></button>
         <i class="fa fa-arrows"></i>
 
