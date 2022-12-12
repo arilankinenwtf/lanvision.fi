@@ -1,4 +1,4 @@
-@slider-bg-color: transparent;
+@slider-bg-color: @mars;
 @slider-color: @white;
 @slider-default-padding: 2rem;
 
@@ -27,7 +27,7 @@
 }
 
 .wtfslider-counter span {
-  color: @slider-color;
+  color: @mars;
 }
 
 .wtfslider-list {
@@ -40,7 +40,7 @@
 }
 
 .wtfslider-item {
-  background-color: @slider-bg-color;
+  background-color: transparent;
   align-items: center;
   color: @slider-color;
   display: flex;
@@ -101,17 +101,17 @@
   z-index: 1;
   position: relative;
   margin: 0;
-  margin-top: -5rem;
+  margin-top: 0;
   padding: 0;
 }
 
 .splide__pagination .splide__pagination__page {
   z-index: 1;
-  margin-bottom: 6rem;
   counter-increment: paginationbutton;
   font-size: 0;
-  background-color: @slider-bg-color;
-  color: @slider-bg-color;
+  background-color: @slider-bg-color !important;
+  color: @slider-bg-color !important;
+  opacity: 1 !important;
   height: 0.5rem;
   width: 0.5rem;
   padding: 0rem;
