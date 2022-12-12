@@ -44,12 +44,12 @@ class Controller extends BlockController implements FileTrackableInterface
 
     public function getBlockTypeName()
     {
-        return t('Slider');
+        return t('WTF Slider');
     }
 
     public function getBlockTypeDescription()
     {
-        return t('Slider for text and images');
+        return t('WTF slider');
     }
 
     public function on_start() {
@@ -80,8 +80,9 @@ class Controller extends BlockController implements FileTrackableInterface
         $r = $db->GetAll('SELECT * from btWtfSliderItems WHERE bID = ? ORDER BY sortOrder', array($this->bID));
         $rows = [];
         $sec = $this->app->make('helper/security');
+
         foreach ($r as $q) {
-            $q['description'] = LinkAbstractor::translateFrom($q['description']);
+            $q['description'] = LinkAbstractor::translateFrom($q['description'] ?? '');
             $rows[] = $q;
         }
         return $rows;
