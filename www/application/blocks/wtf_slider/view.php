@@ -64,7 +64,8 @@ document.addEventListener( 'DOMContentLoaded', function () {
     rewind: true,
     pagination: true,
     autoplay: true,
-    interval: 3000
+    interval: 5000
+    type: "loop",
     //lazyload: 'nearby'
   } ).mount();
 
