@@ -3,6 +3,7 @@
 $fp = FilePermissions::getGlobal();
 $tp = new TaskPermission();
 $bID = "";
+$rows = "";
 
 $getString = Core::make('helper/validation/identifier')->getString(18);
 $tabs = [
